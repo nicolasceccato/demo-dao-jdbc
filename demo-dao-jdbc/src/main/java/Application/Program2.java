@@ -20,6 +20,9 @@ public class Program2 {
         for (Department department1 : departmentList) {
             System.out.println(department1);
         }
-
+        System.out.println("\n=== TEST 3: seller insert ===");
+        Department departmentNew = new Department(null, "Services");
+        departmentDao.insert(departmentNew);
+        System.out.println("Inserted! New id = " + departmentNew.getId());
     }
 }
